@@ -1,0 +1,136 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-\[spin_6s_linear_infinite\] {
+    animation: spin 6s linear infinite;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* toggle between vision and mission */
+
+@keyframes bounceFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bounce-from-right {
+    animation: bounceFromRight 0.8s ease-out;
+}
+
+.bounce-from-right-delay {
+    animation: bounceFromRight 0.9s ease-out 0.1s both;
+}
+
+.bounce-from-left {
+    animation: bounceFromLeft 0.8s ease-out;
+}
+
+.bounce-from-left-delay {
+    animation: bounceFromLeft 0.9s ease-out 0.1s both;
+}
+
+/* continuous scroll and tooltip on hover */
+@keyframes scroll-loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-loop {
+  animation: scroll-loop 60s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* --- Tooltip styling --- */
+.tooltip-content {
+  transform-origin: top center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none; 
+}
+
+/* Tooltip arrow */
+.tooltip-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 16px;
+  height: 16px;
+  background: white;
+  bottom: 93%;
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/* Navbar Active section styling */
+nav a.active span:first-child {
+    font-weight: 600;
+}
+
+nav a.active .absolute {
+    width: 100% !important;
+    opacity: 1 !important;
+}
+
+/* Mobile active state */
+.mobile-menu a.active {
+    font-weight: 600;
+    color: #1a3066;
+}
