@@ -259,7 +259,7 @@
             <div class="flex flex-col items-center text-center pt-20 pb-15 md:w-[50%] mx-auto">
                 <h2 class="text-4xl font-bold mb-6">Our Operating Principles</h2>
                 <p class="text-lg">
-                    SynamoreNEST stands on the pillars of strength, service, and sustainability,
+                    SycamoreNEST stands on the pillars of strength, service, and sustainability,
                     inspiring us to create transformative solutions that unlock potential and build a thriving economy.
                 </p>
             </div>
@@ -861,7 +861,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="">
                 <h3 class="text-lg font-bold mb-2">Email</h3>
-                <p class="text-sm underline">info@synamorenest.com</p>
+                <p class="text-sm underline">contactus@sycamorenest.com</p>
                 <div class=" mt-6 rounded-lg md:col-span-2">
                     <h3 class="text-xl font-bold mb-2">Address</h3>
                     <p class="text-xl"><br>23 Peaceway Drive<br>Off Atiku Road,
