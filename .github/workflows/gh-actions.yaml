@@ -1,0 +1,38 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+    
+    # - name: Install Dependencies
+    #   run: composer install --prefer-dist --no-progress --no-suggest
+        
+    # - name: Build Application
+    #   run: php artisan optimize
+      
+    - name: Upload via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        remote-dir: ${{ secrets.FTP_REMOTE_DIR }}
+        exclude: |
+          **/.github/**
+          **/.git/**
+          **/node_modules/**
+          **/vendor/**
+          **.env
+          **.env.*
