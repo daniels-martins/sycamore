@@ -172,7 +172,7 @@
         </div>
 
         <!-- toggle vision and mission section -->
-        <div id="sections-container" class="relative overflow-hidden h-[500px] lg:h-screen w-full scale-80">
+        <div id="sections-container" class="relative overflow-hidden h-[350px] lg:h-screen w-full scale-80">
 
             <!-- Our Vision -->
             <section id="visionSection"
@@ -200,8 +200,8 @@
             </section>
 
             <!-- Our Mission -->
-            <section id="missionSection" class="absolute inset-0 flex flex-col justify-center items-start bg-[#1a3066] text-white px-6 md:px-10 
-        transition-transform duration-700 ease-in-out translate-x-full z-10">
+            <section id="missionSection"
+                class="absolute inset-0 flex flex-col justify-center items-start bg-[#1a3066] text-white px-6 md:px-10 transition-transform duration-700 ease-in-out translate-x-full z-10">
                 <div class="max-w-3xl mx-auto pl-12">
                     <h3 class="font-bold text-4xl sm:text-5xl mb-6 sm:mb-10">Our Mission</h3>
                     <p class="text-lg sm:text-2xl lg:text-3xl">
@@ -213,8 +213,8 @@
 
                 <!-- Button -->
                 <div class="absolute inset-y-0 left-0 flex items-center bg-white scale-80">
-                    <button id="toVision" class="relative text-[#1a3066] font-bold flex flex-col items-center justify-center 
-            h-full w-16 sm:w-20 transition-all">
+                    <button id="toVision"
+                        class="relative text-[#1a3066] font-bold flex flex-col items-center justify-center h-full w-16 sm:w-20 transition-all">
                         <span class="rotate-180 text-xl [writing-mode:vertical-rl] tracking-wide">Our
                             Vision</span>
                         <img src="./assets/images/mission.svg" alt="arrow"
@@ -224,21 +224,27 @@
             </section>
         </div>
 
-        <!-- our expertise -->
-        <div class=" md:flex px-5 lg:px-20 gap-10 py-[150px] scale-80">
-            <div class="md:w-[50%] pb-5 lg:pb-0">
+        <!-- about us -->
+        <div class=" md:flex px-5 lg:px-20 lg:gap-10 lg:py-[150px] scale-80">
+            <div class="md:w-[50%] lg:pb-0">
                 <img src="./assets/images/sycamore-image-two.png" alt="synamore dining">
             </div>
             <div class="md:w-[50%] flex flex-col justify-center">
-                <h3 class="font-bold text-2xl lg:text-3xl mb-5"> About Us <br><br> SycamoreNEST Consulting  has a reputation of providing trusted compliance and advisory services to businesses at various stages of their lifecycle. For us trust means the highest quality of technical skills delivered with integrity, creativity and exceptional service.
+                <h3 class="font-bold text-2xl lg:text-3xl mb-5"> About Us <br><br> SycamoreNEST Consulting has a
+                    reputation of providing trusted compliance and advisory services to businesses at various stages of
+                    their lifecycle. For us trust means the highest quality of technical skills delivered with
+                    integrity, creativity and exceptional service.
 
 
-By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance that a top notch professional firm can offer, whilst benefitting from experienced professionals who have for many years dealt with all types of business.
+                    By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance that a top notch
+                    professional firm can offer, whilst benefitting from experienced professionals who have for many
+                    years dealt with all types of business.
 
 
                 </h3>
                 <p class="text-2xl">
-                    Our consulting focus and core competencies lies in the areas of Accountancy Services, Assurance Services, Corporate and Personal Tax
+                    Our consulting focus and core competencies lies in the areas of Accountancy Services, Assurance
+                    Services, Corporate and Personal Tax
                     Consultation,
                     Risk Management, and General Management Advisory.
                 </p>
@@ -246,7 +252,7 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
         </div>
 
         <!-- core values -->
-        <div id="core-values" class="bg-gray-100 px-5 lg:px-15 pb-15 scale-80">
+        <div id="core-values" class="bg-gray-100 lg:px-15 lg:pb-15 lg:scale-80 my-0">
             <div class="flex flex-col items-center text-center pt-20 pb-15 md:w-[50%] mx-auto">
                 <h2 class="text-4xl font-bold mb-6">Our Operating Principles</h2>
                 <p class="text-lg">
@@ -306,7 +312,8 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
         </div>
 
         <!-- services -->
-        <div id="services" class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 scale-80">
+        <div id="services"
+            class="max-w-6xl mx-auto px-1 lg:px-4 lg:py-16 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 lg:mt-0 lg:scale-80">
             <!-- Left Column -->
             <div>
                 <h2 class="text-3xl font-bold mb-10">Client Sector Driven Services</h2>
@@ -319,10 +326,14 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
                     <div>
                         <h3 class="font-bold text-lg mb-2">RETAIL/SMEs</h3>
                         <p class="text-[18px] leading-relaxed">
-                            SycamoreNEST Consulting has skilled Consultants when it comes to dealing with clients in the SMEs 
-                            and retail industry. With the increasing importance of on-line activity to retailers and the need 
-                            to trade seamlessly to deliver growth and combat rising costs and competition, the skills and 
-                            profound client relationship of our experts enable us  to provide seamless services wherever needed. 
+                            SycamoreNEST Consulting has skilled Consultants when it comes to dealing with clients in the
+                            SMEs
+                            and retail industry. With the increasing importance of on-line activity to retailers and the
+                            need
+                            to trade seamlessly to deliver growth and combat rising costs and competition, the skills
+                            and
+                            profound client relationship of our experts enable us to provide seamless services wherever
+                            needed.
                         </p>
                     </div>
                 </div>
@@ -335,11 +346,16 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
                     <div>
                         <h3 class="font-bold text-lg mb-2">Manufacturing</h3>
                         <p class="text-[18px] leading-relaxed">
-                            Providing services to clients in the manufacturing sector is a key activity for SycamoreNEST Consulting.
-                            Manufacturing is a global activity with many businesses taking advantage of the cost advantages in the 
-                            emerging economies. SycamoreNEST Consulting has the growing capacity to advise small, medium and 
-                            multi-national manufacturers on company formation; funding for growth; capital investment in equipment; 
-                            entry into new markets; mergers and acquisitions; investment decisions; budgeting and forecasting,
+                            Providing services to clients in the manufacturing sector is a key activity for SycamoreNEST
+                            Consulting.
+                            Manufacturing is a global activity with many businesses taking advantage of the cost
+                            advantages in the
+                            emerging economies. SycamoreNEST Consulting has the growing capacity to advise small, medium
+                            and
+                            multi-national manufacturers on company formation; funding for growth; capital investment in
+                            equipment;
+                            entry into new markets; mergers and acquisitions; investment decisions; budgeting and
+                            forecasting,
                             international tax, employment as well as undertaking assurance engagements.
 
 
@@ -360,13 +376,13 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
                     <div>
                         <h3 class="font-bold text-lg mb-2">Hospitality</h3>
                         <p class="text-[18px] leading-relaxed">
-                            With ever changing customer demands, firms in the Hospitality industry need to 
-                            be totally focused on their business and so rely even more on the expertise that 
-                            our firm can provide. Increased competition means companies must have the ability 
+                            With ever changing customer demands, firms in the Hospitality industry need to
+                            be totally focused on their business and so rely even more on the expertise that
+                            our firm can provide. Increased competition means companies must have the ability
                             to adapt quickly and differentiate themselves from others in the industry.
-                            SycamoreNEST Consultants understand this market and our expertise makes us ideally 
-                            placed to assist your business wherever it may be. We can provide business strategy 
-                            advice including cash flow, forecasts and budgets; accounting and tax;  obtaining 
+                            SycamoreNEST Consultants understand this market and our expertise makes us ideally
+                            placed to assist your business wherever it may be. We can provide business strategy
+                            advice including cash flow, forecasts and budgets; accounting and tax; obtaining
                             finance and also overseeing business acquisition and sales transactions.
 
                         </p>
@@ -381,16 +397,21 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
                     <div>
                         <h3 class="font-bold text-lg mb-2">Professional Services Firms</h3>
                         <p class="text-[18px] leading-relaxed">
-                            SycamoreNEST Consulting has the capacity to serve and advise a broad range of professional services
-                            providers such as engineering firms, architects, real estate, legal firms, consultants, 
+                            SycamoreNEST Consulting has the capacity to serve and advise a broad range of professional
+                            services
+                            providers such as engineering firms, architects, real estate, legal firms, consultants,
                             design specialists, medical practitioners and veterinarians.
-                            We deliver reliable accounting and tax solutions to those in this sector to ensure they achieve 
-                            business success and growth. We advise on current practice management issues, including strategy 
-                            and tax planning in relation to partnerships,  and individuals and also offer forensic accounting 
+                            We deliver reliable accounting and tax solutions to those in this sector to ensure they
+                            achieve
+                            business success and growth. We advise on current practice management issues, including
+                            strategy
+                            and tax planning in relation to partnerships, and individuals and also offer forensic
+                            accounting
                             as well as VAT and capital gains tax advice.
 
 
-                            SycamoreNEST Consultants understand what it takes to run successful, profitable firms and understand 
+                            SycamoreNEST Consultants understand what it takes to run successful, profitable firms and
+                            understand
                             the challenges facing their clients.
 
                         </p>
@@ -400,7 +421,7 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
         </div>
 
         <!-- philosophy -->
-        <div id="philosophy" class="py-[100px]  bg-gray-100 scale-80">
+        <div id="philosophy" class="py-[100px]  bg-gray-100 lg:scale-80">
             <h5 class="text-4xl font-bold mb-8 lg:w-[70%] mx-auto text-center">We believe that with the right funding
                 and expertise,
                 Nigerian businesses can grow, expand, and compete successfully on the global stage.
@@ -428,7 +449,7 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
         </div>
 
         <!-- our approach -->
-        <div id="our-approach" class="pt-[100px] bg-gray-200 scale-80">
+        <div id="our-approach" class="pt-[100px] lg:bg-gray-200 lg:scale-80">
             <h3 class="lg:text-3xl text-2xl font-bold w-[95%] lg:w-[70%] mx-auto mb-10">
                 We adopt an innovative approach to financial and business advisory, serving as a
                 strategic bridge between companies and investors to ensure the right capital reaches the right
@@ -600,367 +621,328 @@ By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance t
 
     <!-- advisors -->
     <!-- advisors -->
-    <div id="advisors" class="py-16 px-6 lg:px-20 text-center scale-80">
+    <div id="advisors" class="py-1 px-6 lg:px-20 text-center lg:scale-80">
         <h2 class="text-2xl font-semibold mb-10">Board Of Consultants</h2>
 
         <div>
             <!-- Row 1 -->
             <div class="flex justify-center lg:flex-row md:flex-row flex-col gap-10 mb-10">
                 <!-- Card 1 -->
-                <div class="flex flex-col items-start">
-                    <img src="./assets/images/Joshua_Ayoola_Ihimoyan_Photo_page-0001.jpg" alt="Joshua"
-                        class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                    <h3 class="font-semibold text-lg">Joshua Ayoola Ihimoyan</h3>
-                    <div class="flex gap-4 items-center">
-                        <p class="text-gray-600">Consultant</p>
-                        <button data-modal="modal-abimbola" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
+                <div class="flex w-full justify-center">
+                    <div class="">
+                        <img src="./assets/images/Joshua_Ayoola_Ihimoyan_Photo_page-0001.jpg" alt="Joshua"
+                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
+                        <h3 class="font-semibold text-lg">Joshua Ayoola Ihimoyan</h3>
+                        <div class="flex justify-center gap-4 items-center w-full">
+                            <p class="text-gray-600">Consultant</p>
+
+                            <button data-modal="modal-abimbola" class="text-[#1a3066] hover:underline">View
+                                profile</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="flex flex-col items-start">
+                <div class="flex w-full justify-center">
+                    <div class="">
                         <img src="./assets/images/MrOpeolu.jfif" alt="jumoke"
                             class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
                         <h3 class="font-semibold text-lg">Opeolu Ogunnaike</h3>
-                        <div class="flex gap-4 items-center">
+                        <div class="flex justify-center gap-4 items-center w-full">
                             <p class="text-gray-600">Consultant</p>
-                            <button data-modal="modal-jumoke" class="text-[#1a3066] mt-1 hover:underline">View
+                            <button data-modal="modal-jumoke" class="text-[#1a3066] hover:underline">View
                                 profile</button>
                         </div>
                     </div>
-                </div> 
-
-                <!-- Grid -->
-                <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"> -->
-                <!-- Card 3 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/ladipo.png" alt="ladipo"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Ladipo Ogunlesi</h3>
-                        <button data-modal="modal-ladipo" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-
-                <!-- Card 4 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/abayomi.png" alt="abayomi"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Abayomi Monehin</h3>
-                        <button data-modal="modal-abayomi" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-
-                <!-- Card 5 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/olanike.png" alt="olanike"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Olanike Olakanle</h3>
-                        <button data-modal="modal-olanike" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-
-                <!-- Card 6 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/mercy.png" alt="mercy"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Mercy Aminah</h3>
-                        <button data-modal="modal-mercy" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-
-                <!-- Card 7 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/ayotunde.png" alt="ayotunde"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Ayotunde Adeyemi</h3>
-                        <button data-modal="modal-ayotunde" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-
-                <!-- Card 8 -->
-                <!-- <div class="flex flex-col items-start">
-                        <img src="./assets/images/robert.png" alt="robert"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
-                        <h3 class="font-semibold text-lg">Robert Omotunde</h3>
-                        <button data-modal="modal-robert" class="text-[#1a3066] mt-1 hover:underline">View
-                            profile</button>
-                    </div> -->
-                <!-- </div> -->
-            </div>
-        </div>
-
-        <!-- ===== Modals Section ===== -->
-        <!-- Each modal has a unique ID -->
-        <!-- Modal 1 -->
-        <div id="modal-abimbola"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Joshua Ayoola Ihimoyan</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Joshua Ayoola Ihimoyan is a detail-oriented and results-driven Accountant With over 15 years of
-                    progressive experience in financial reporting, auditing, budgeting, and internal controls across
-                    diverse sectors. A Chartered Accountant and Certified Forensic Accountant, Joshua combines
-                    analytical depth with strategic foresight to enhance financial performance and ensure regulatory
-                    compliance.
-
-                    He holds a Bachelor’s Degree in Business Management from the University of Jos and is a proud member
-                    of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Certified Forensic
-                    Accountants of Nigeria (CFAN).
-
-                    Currently, Joshua works with Lululemon in Milton, Canada, where he provides expert accounting and
-                    taxation consultancy services. Over the course of his career, he has held key finance and audit
-                    roles in reputable organizations, including Integrated Dairies Limited, Dilkon Group, CRUDAN, and
-                    Moses Durodola & Co. (Chartered Accountants). His expertise spans external and internal auditing,
-                    financial reporting, tax compliance, and risk management.
-
-                    Joshua has successfully led teams in designing and implementing robust financial controls, ensuring
-                    transparency, accountability, and adherence to accounting standards and regulatory frameworks. With
-                    a strong command of financial analytics tools such as Microsoft Excel, Power BI, SQL, and Python, he
-                    leverages data-driven insights to support informed business decisions.
-
-                    Passionate about organizational growth and ethical financial practices, Joshua continues to drive
-                    institutional efficiency and fiscal integrity. He is based in Brampton, Ontario, Canada, and remains
-                    open to professional opportunities where his expertise can add measurable value.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 2 -->
-        <div id="modal-jumoke"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Jumoke Awolumate</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Opeolu Ogunnaike is a competent and committed professional of proven years of experience in Internal Audit, Controls, Corporate Governance, Fraud & Forensic Investigation, Financial Analysis, and Tax Management. Opeolu is an experienced chartered accountant and a tax professional. He is a fellow member of both the Institute of Chartered Accountants of Nigeria and the Chartered Institute of Taxation of Nigeria, and an associate member of the Association of National Accountants of Nigeria. He holds an MBA in Financial Management, a Masters degree in Auditing & Forensic Investigation, and a CertIFRS certification by the ACCA.
-
-Opeolu Ogunnaike was the Group  Internal Control Manager at the Sportsworld Limited (the parent company of DIVA Accessories and Sportsworld), the leading retail outlets with presence in most shopping malls in Nigeria and Ghana. He had a stint as a Consultant with Krestonouc (Chartered Accountants), a member of Kreston International (one of the leading audit firms in the world), and was the Internal Controller at SYNLAB Nigeria - a member of the SYNLAB Group (the largest medical diagnostics service provider in Europe). He is presently the Head of Internal Audit & Controls at Integrated Dairies Limited, the premiere producer of farmfresh dairy products in West Africa.
-
-With over 20 years of experience in audit, financial analysis & reporting, tax planning & management, and business performance management, Opeolu has a passion for providing solutions to help indigenous businesses thrive and attain global standards in their respective business operations and administration. He has led strategic team in some of the organizations he has worked-in to drive growth by hedging against operational wastages, thereby enhancing profitability, while promoting compliance with regulatory standards ‘with ease’ 
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 3 -->
-        <div id="modal-ladipo"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Ladipo Ogunlesi</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Ladipo is a cloud computing expert with extensive experience working with AWS and Azure
-                    infrastructures.
-                    He built scalable systems for enterprises before founding his own cloud consultancy firm. His focus
-                    lies in
-                    helping African businesses adopt cloud technology for efficiency and growth.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 4 -->
-        <div id="modal-abayomi"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Abayomi Monehin</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Abayomi’s tech journey began in software security, later moving into enterprise data analytics. His
-                    consultancy helps businesses derive actionable insights from large datasets. He has led digital
-                    transformation initiatives across the finance and logistics sectors.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 5 -->
-        <div id="modal-olanike"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Olanike Olakanle</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Olanike began as a data scientist and rose to become a senior analytics consultant. Her expertise in
-                    predictive modeling has been instrumental in fintech product development. She is a mentor for the
-                    Women in
-                    Data Science (WiDS) community in West Africa.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 6 -->
-        <div id="modal-mercy"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Mercy Aminah</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Mercy started as a software tester, then transitioned into DevOps engineering. She now leads
-                    infrastructure
-                    automation for a leading pan-African e-commerce brand. Her story embodies persistence and
-                    adaptability in
-                    fast-changing tech environments.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 7 -->
-        <div id="modal-ayotunde"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Ayotunde Adeyemi</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Ayotunde has over 15 years of experience in full-stack web development and has worked with global
-                    SaaS
-                    companies. He is passionate about mentoring young coders and building sustainable open-source
-                    ecosystems
-                    across Africa.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- Modal 8 -->
-        <div id="modal-robert"
-            class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
-                <h3 class="text-xl font-semibold mb-2">Robert Omotunde</h3>
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Robert started his journey as a mobile developer before moving into blockchain and Web3
-                    technologies. He
-                    has led innovation teams building decentralized finance (DeFi) platforms and now advises startups on
-                    blockchain strategy.
-                </p>
-                <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
-            </div>
-        </div>
-
-        <!-- ===== Simple JS to Handle Modals ===== -->
-        <script>
-            document.querySelectorAll('[data-modal]').forEach(button => {
-                button.addEventListener('click', () => {
-                    document.getElementById(button.dataset.modal).classList.remove('hidden');
-                    document.getElementById(button.dataset.modal).classList.add('flex');
-                });
-            });
-
-            document.querySelectorAll('.close-modal').forEach(button => {
-                button.addEventListener('click', () => {
-                    button.closest('.fixed').classList.add('hidden');
-                    button.closest('.fixed').classList.remove('flex');
-                });
-            });
-
-            // Optional: click outside to close
-            document.querySelectorAll('.fixed').forEach(modal => {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        modal.classList.add('hidden');
-                        modal.classList.remove('flex');
-                    }
-                });
-            });
-        </script>
-
-        <!-- footer -->
-        <footer id="footer" class="bg-[#17A8AB] text-white py-12 px-6 md:px-20">
-            <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 border-b-2 border-white pb-6">
-                <div class="flex items-center space-x-3">
-                    <img src="./assets/icons/logo-main-synamore.jpeg" alt="" class="h-16">
-
                 </div>
             </div>
 
-            <!-- Contact Info -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="">
-                    <h3 class="text-lg font-bold mb-2">Email</h3>
-                    <p class="text-sm underline">info@synamorenest.com</p>
-                    <div class=" mt-6 rounded-lg md:col-span-2">
-                        <h3 class="text-xl font-bold mb-2">Address</h3>
-                        <p class="text-xl"><br>23 Peaceway Drive<br>Off Atiku Road,
-                            <br>Rayfield, Jos
-                            <br>Plateau State, Nigeria
-                        </p>
-                    </div>
-                </div>
-                <div class="">
-                    <h3 class="text-2xl font-bold mb-2">Telephone Numbers</h3>
-                    <p class="text-xl">+234 803 608 6280 <br> +234 815 210 1990</p>
+        </div>
+    </div>
 
-                    <!-- <h3 class="text-2xl font-bold mb-2 mt-12">Social Media</h3> -->
-                    <!-- <div class="flex space-x-4">
+    <!-- ===== Modals Section ===== -->
+    <!-- Each modal has a unique ID -->
+    <!-- Modal 1 -->
+    <div id="modal-abimbola"
+        class="fixed top-50 left-0 bottom-20 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50 scale-90">
+        <div class="bg-gray-200 p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Joshua Ayoola Ihimoyan</h3>
+            <p class="text-gray-600 mt-10 text-sm leading-relaxed">
+
+                Joshua Ayoola Ihimoyan is a highly experienced and detail-oriented **Chartered Accountant (ICAN)** and
+                **Certified Forensic Accountant (CFAN)** with over 15 years of progressive experience in financial
+                reporting, auditing, budgeting, and internal controls across diverse sectors.
+
+                He holds a Bachelor's Degree in Business Management from the University of Jos. Joshua currently works
+                with **Lululemon in Milton, Canada**, providing expert accounting and taxation consultancy services. His
+                extensive career includes key finance and audit roles at reputable organizations such as Integrated
+                Dairies Limited, Dilkon Group, CRUDAN, and Moses Durodola & Co.
+
+                Joshua's core expertise spans **external and internal auditing**, **financial reporting**, **tax
+                compliance**, and **risk management**. He is noted for successfully leading teams in designing and
+                implementing **robust financial controls**, ensuring transparency, accountability, and adherence to
+                regulatory frameworks. A results-driven professional, he possesses a strong command of financial
+                analytics tools, including **Microsoft Excel, Power BI, SQL, and Python**, leveraging data-driven
+                insights for informed business decisions.
+
+                Passionate about ethical financial practices and organizational growth, Joshua is based in **Brampton,
+                Ontario, Canada**, and is open to new professional opportunities where he can contribute measurable
+                value and fiscal integrity.
+
+
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal-jumoke"
+        class="fixed top-50 left-0 bottom-20 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50 scale-90">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Opeolu Ogunnaike </h3>
+            <p class="text-gray-600  mt-10 text-sm leading-relaxed">
+
+                Opeolu Ogunnaike is a highly competent and committed professional with over **20 years of proven
+                experience** in **Internal Audit, Controls, Corporate Governance, Fraud & Forensic Investigation,
+                Financial Analysis, and Tax Management**. He is an experienced **Chartered Accountant** and **Tax
+                Professional**.
+
+                Opeolu is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered
+                Institute of Taxation of Nigeria (CITN). He also holds an **MBA in Financial Management**, a Master's
+                degree in **Auditing & Forensic Investigation**, and an ACCA **CertIFRS** certification.
+
+                He is currently the **Head of Internal Audit & Controls at Integrated Dairies Limited**, a premiere
+                producer in West Africa. Previously, Opeolu served as the Group Internal Control Manager at
+                **Sportsworld Limited** and the Internal Controller at **SYNLAB Nigeria**. He also consulted with
+                **Krestonouc** (a Kreston International member firm).
+
+                His extensive expertise covers audit, financial analysis & reporting, tax planning & management, and
+                business performance management. Opeolu is passionate about helping indigenous businesses thrive by
+                leading strategic teams to **hedge against operational wastages**, enhance profitability, and promote
+                **regulatory compliance** with ease.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal-ladipo"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Ladipo Ogunlesi</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Ladipo is a cloud computing expert with extensive experience working with AWS and Azure
+                infrastructures.
+                He built scalable systems for enterprises before founding his own cloud consultancy firm. His focus
+                lies in
+                helping African businesses adopt cloud technology for efficiency and growth.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal-abayomi"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Abayomi Monehin</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Abayomi’s tech journey began in software security, later moving into enterprise data analytics. His
+                consultancy helps businesses derive actionable insights from large datasets. He has led digital
+                transformation initiatives across the finance and logistics sectors.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal-olanike"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Olanike Olakanle</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Olanike began as a data scientist and rose to become a senior analytics consultant. Her expertise in
+                predictive modeling has been instrumental in fintech product development. She is a mentor for the
+                Women in
+                Data Science (WiDS) community in West Africa.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal-mercy"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Mercy Aminah</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Mercy started as a software tester, then transitioned into DevOps engineering. She now leads
+                infrastructure
+                automation for a leading pan-African e-commerce brand. Her story embodies persistence and
+                adaptability in
+                fast-changing tech environments.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div id="modal-ayotunde"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Ayotunde Adeyemi</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Ayotunde has over 15 years of experience in full-stack web development and has worked with global
+                SaaS
+                companies. He is passionate about mentoring young coders and building sustainable open-source
+                ecosystems
+                across Africa.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div id="modal-robert"
+        class="fixed top-30 left-0 bottom-50 inset-0 bg-transparent bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg w-full">
+            <h3 class="text-xl font-semibold mb-2">Robert Omotunde</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Robert started his journey as a mobile developer before moving into blockchain and Web3
+                technologies. He
+                has led innovation teams building decentralized finance (DeFi) platforms and now advises startups on
+                blockchain strategy.
+            </p>
+            <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
+        </div>
+    </div>
+
+    <!-- ===== Simple JS to Handle Modals ===== -->
+    <script>
+        document.querySelectorAll('[data-modal]').forEach(button => {
+            button.addEventListener('click', () => {
+                document.getElementById(button.dataset.modal).classList.remove('hidden');
+                document.getElementById(button.dataset.modal).classList.add('flex');
+            });
+        });
+
+        document.querySelectorAll('.close-modal').forEach(button => {
+            button.addEventListener('click', () => {
+                button.closest('.fixed').classList.add('hidden');
+                button.closest('.fixed').classList.remove('flex');
+            });
+        });
+
+        // Optional: click outside to close
+        document.querySelectorAll('.fixed').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                }
+            });
+        });
+    </script>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-[#17A8AB] text-white py-12 px-6 md:px-20">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 border-b-2 border-white pb-6">
+            <div class="flex items-center space-x-3">
+                <img src="./assets/icons/logo-main-synamore.jpeg" alt="" class="h-16">
+
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="">
+                <h3 class="text-lg font-bold mb-2">Email</h3>
+                <p class="text-sm underline">info@synamorenest.com</p>
+                <div class=" mt-6 rounded-lg md:col-span-2">
+                    <h3 class="text-xl font-bold mb-2">Address</h3>
+                    <p class="text-xl"><br>23 Peaceway Drive<br>Off Atiku Road,
+                        <br>Rayfield, Jos
+                        <br>Plateau State, Nigeria
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <h3 class="text-2xl font-bold mb-2">Telephone Numbers</h3>
+                <p class="text-xl">+234 803 608 6280 <br> +234 815 210 1990</p>
+
+                <!-- <h3 class="text-2xl font-bold mb-2 mt-12">Social Media</h3> -->
+                <!-- <div class="flex space-x-4">
                         <span class="text-2xl"><img src="./assets/icons/facebook.svg" alt=""></span>
                         <span class="text-2xl"><img src="./assets/icons/twitter.svg" alt=""></span>
                         <span class="text-2xl"><img src="./assets/icons/linkedin.svg" alt=""></span>
                         <span class="text-2xl"><img src="./assets/icons/instagram.svg" alt=""></span>
                     </div> -->
 
-                </div>
-                <div class="">
-                    <h3 class="text-2xl font-bold mb-2">Get In Touch With Us</h3>
-                    <form class="space-y-4" id="footer-form">
-                        <label class="block text-xl mb-1">Your Full Name</label>
-                        <input type="name"
-                            class="w-full border-b-2 border-white bg-gray-300 text-white placeholder-white focus:outline-none"
-                            placeholder="">
-                        <label class="block text-xl mb-1">Your Email Address</label>
-                        <input type="email"
-                            class="w-full border-b-2 border-white bg-gray-300 text-white placeholder-white focus:outline-none"
-                            placeholder="">
-                        <label class="block text-xl mb-1">Enter Your Message</label>
-                        <input type="message"
-                            class="w-full border-b-2 border-white bg-gray-300 text-white placeholder-white focus:outline-none"
-                            placeholder="">
-                        <p class="text-xl">By sending this email, you agree to our Privacy Policy. We treat
-                            your
-                            info
-                            responsibly</p>
-                        <button type="submit"
-                            class="group relative overflow-hidden text-white px-4 py-2 rounded-full flex items-center justify-center border-2 border-white transition-all duration-500 hover:bg-white hover:text-black">
+            </div>
+            <div class="">
+                <h3 class="text-2xl font-bold mb-2">Get In Touch With Us</h3>
+                <form class="space-y-4" id="footer-form" action="send_email.php" method="POST">
+                    <label class="block text-xl mb-1">Your Full Name</label>
+                    <input name="name"
+                        class="w-full border-b-2 border-white bg-gray-300 text-gray-800 placeholder-white focus:outline-none"
+                        placeholder="">
+                    <label class="block text-xl mb-1">Your Email Address</label>
+                    <input type="email" name="email"
+                        class="w-full border-b-2 border-white bg-gray-300 text-gray-800 placeholder-white focus:outline-none"
+                        placeholder="">
+                    <label class="block text-xl mb-1">Enter Your Message</label>
+                    <textarea name="message"
+                        class="w-full border-b-2 border-white bg-gray-300 text-gray-800 placeholder-white focus:outline-none"
+                        placeholder=""></textarea>
+                    <p class="text-xl">By sending this email, you agree to our Privacy Policy. We treat
+                        your
+                        info
+                        responsibly</p>
+                    <button type="submit"
+                        class="group relative overflow-hidden text-white px-4 py-2 rounded-full flex items-center justify-center border-2 border-white transition-all duration-500 hover:bg-white hover:text-black">
 
-                            <!-- Sliding white overlay -->
-                            <span
-                                class="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+                        <!-- Sliding white overlay -->
+                        <span
+                            class="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
 
-                            <!-- Button content -->
-                            <div
-                                class="relative flex items-center gap-2 transition-transform duration-500 ease-out group-hover:translate-x-2">
-                                <p class="text-2xl">Send message</p>
-                                <span class="relative w-5 h-5">
-                                    <!-- White arrow (default) -->
-                                    <img src="./assets/images/arrow-right-white.svg" alt="arrow-white"
-                                        class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                        <!-- Button content -->
+                        <div
+                            class="relative flex items-center gap-2 transition-transform duration-500 ease-out group-hover:translate-x-2">
+                            <p class="text-2xl">Send message</p>
+                            <span class="relative w-5 h-5">
+                                <!-- White arrow (default) -->
+                                <img src="./assets/images/arrow-right-white.svg" alt="arrow-white"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 group-hover:opacity-0">
 
-                                    <!-- Black arrow (on hover) -->
-                                    <img src="./assets/icons/arrow-right.svg" alt="arrow-black"
-                                        class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                                </span>
-                            </div>
-                        </button>
+                                <!-- Black arrow (on hover) -->
+                                <img src="./assets/icons/arrow-right.svg" alt="arrow-black"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                            </span>
+                        </div>
+                    </button>
 
-                    </form>
-                </div>
-
-
+                </form>
             </div>
 
-            <div class="flex justify-between items-center mt-8 text-xl">
-                <p>Copyright ©️ 2025</p>
-                <!-- Back to Top Button -->
-                <button id="backToTop"
-                    class="group relative overflow-hidden text-white text-4xl w-12 h-12 rounded-full border border-white flex items-center justify-center transition-all duration-500">
-                    <!-- Sliding hover layer -->
-                    <span
-                        class="absolute inset-0 bg-white opacity-30 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
 
-                    <!-- Button icon (kept visible) -->
-                    <img src="./assets/images/btt.svg" alt="Back to top" class="relative z-10">
-                </button>
+        </div>
 
-            </div>
-        </footer>
+        <div class="flex justify-between items-center mt-8 text-xl">
+            <p>Copyright ©️ 2025</p>
+            <!-- Back to Top Button -->
+            <button id="backToTop"
+                class="group relative overflow-hidden text-white text-4xl w-12 h-12 rounded-full border border-white flex items-center justify-center transition-all duration-500">
+                <!-- Sliding hover layer -->
+                <span
+                    class="absolute inset-0 bg-white opacity-30 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
+
+                <!-- Button icon (kept visible) -->
+                <img src="./assets/images/btt.svg" alt="Back to top" class="relative z-10">
+            </button>
+
+        </div>
+    </footer>
 
     </div>
     <script src="/script.js"></script>
