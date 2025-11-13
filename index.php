@@ -959,4 +959,7 @@
 
 </html>
 
-<?php session_abort(); ?>
+<?php 
+session_unset();
+session_destroy();
+ ?>

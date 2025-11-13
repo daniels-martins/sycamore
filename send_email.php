@@ -20,11 +20,6 @@ if (file_exists('config_secrets.php')) {
     die("Error: Secret configuration file not found. Please create config_secrets.php");
 }
 
-// Use the values
-$mail->Host = $secrets['smtp_host'];
-$mail->Username = $secrets['smtp_user'];
-$mail->Password = $secrets['smtp_pass'];
-
 
 // Check if the form was submitted via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
