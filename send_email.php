@@ -2,6 +2,7 @@
 // Set error reporting for debugging (Remove in production)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -9,6 +10,20 @@ use PHPMailer\PHPMailer\SMTP;
 require './PHPMailer7/src/Exception.php';
 require './PHPMailer7/src/PHPMailer.php';
 require './PHPMailer7/src/SMTP.php'; // Required for SMTP
+
+
+// Attempt to load the secure config file
+if (file_exists('config_secrets.php')) {
+    $secrets = require 'config_secrets.php';
+} else {
+    // Handle error or use dummy values if needed
+    die("Error: Secret configuration file not found. Please create config_secrets.php");
+}
+
+// Use the values
+$mail->Host = $secrets['smtp_host'];
+$mail->Username = $secrets['smtp_user'];
+$mail->Password = $secrets['smtp_pass'];
 
 
 // Check if the form was submitted via POST
@@ -39,11 +54,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings (Use your SMTP Credentials here)
         // -------------------------------------------------
-        $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host = 'smtp.hostinger.com';                 // Set the SMTP server to send through
+        $mail->isSMTP();
+
+        // Use the values
+        $mail->Host = $secrets['smtp_host'];
+        $mail->Username = $secrets['smtp_user'];
+        $mail->Password = $secrets['smtp_pass'];
+
+        // Send using SMTP
         $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-        $mail->Username = 'info@sycamorenest.com';                   // SMTP username
-        $mail->Password = 't$5OT9tW';                   // SMTP password
+        
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Enable implicit TLS encryption ('SMTPS' uses port 465)
         // OR: $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use 'STARTTLS' for port 587
         $mail->Port = 465;                                    // TCP port to connect to
@@ -70,9 +90,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body = $body;
         $mail->AltBody = "Name: {$full_name}\nEmail: {$email_address}\nMessage: {$user_message}"; // Plain text alternative
 
+
         $mail->send();
         // Redirect upon successful send
-        header('Location: thank_you.html');
+        $_SESSION['success_msg'] = 'message sent successfully. check your mail for confirmation';
+        header('Location: /index.php');
         exit;
 
     } catch (Exception $e) {
@@ -86,4 +108,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: /'); // Redirect back to homepage
     exit;
 }
-?>
+
+session_abort();

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
@@ -11,6 +12,8 @@
 </head>
 
 <body>
+
+
     <div class=" overflow-x-hidden">
         <!-- navbar on lg -->
         <nav
@@ -881,6 +884,12 @@
 
             </div>
             <div class="">
+                <div class="success-msg">
+                    <?php if (isset($_SESSION['success_msg'])): ?>
+                        <div class="bg-green-800 py-2 px-5 text-white"><?php echo $_SESSION['success_msg']; ?> </div>
+                    <?php endif; ?>
+                </div>
+
                 <h3 class="text-2xl font-bold mb-2">Get In Touch With Us</h3>
                 <form class="space-y-4" id="footer-form" action="send_email.php" method="POST">
                     <label class="block text-xl mb-1">Your Full Name</label>
@@ -949,3 +958,5 @@
 </body>
 
 </html>
+
+<?php session_abort(); ?>
