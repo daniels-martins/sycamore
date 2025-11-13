@@ -66,8 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recipients
         $mail->setFrom('info@sycamorenest.com', 'Sycamorenest'); // Sender email/name
         $mail->addAddress('info@sycamorenest.com', 'Sycamorenest'); // Add a recipient (Where the email goes)
-        $mail->addBCC($email_address); //back to the sender 
-        $mail->addBCC('meetdaniels@gmail.com'); //send to the admin 
+        // $mail->addBCC($email_address); //back to the sender 
+        // $mail->addBCC('meetdaniels@gmail.com'); //send to the admin 
         $mail->addReplyTo($email_address, $full_name); // Set reply-to to the user's email
 
         // Content
