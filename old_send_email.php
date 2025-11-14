@@ -3,35 +3,6 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 session_start();
-
-// --- SECURITY CHECKS START ---
-
-// 1. Honeypot Check: Field should be empty
-if (isset($_POST['website']) && !empty($_POST['website'])) {
-    // Bot detected because it filled out the hidden 'website' field
-    // Log this attempt if you want, and stop execution gracefully.
-    error_log("Bot detected (Honeypot) on form submission.");
-    // Redirect or show a success message to confuse the bot, but don't send the email
-    header('Location: /thank_you_for_submitting_something_that_we_ignored.php'); 
-    exit;
-}
-
-// 2. Time-Based Check: Minimum time a human needs to fill the form (e.g., 5 seconds)
-$min_time_threshold = 5; // Set the minimum allowed time in seconds
-$start_time = filter_input(INPUT_POST, 'form_start_time', FILTER_SANITIZE_NUMBER_INT);
-$submission_time = time();
-
-if (empty($start_time) || ($submission_time - $start_time < $min_time_threshold)) {
-    // Bot detected because the form was submitted too fast (or the start time was missing)
-    error_log("Bot detected (Time Check) on form submission. Time: " . ($submission_time - $start_time) . "s");
-    // Redirect or show a success message to confuse the bot, but don't send the email
-    header('Location: /thank_you_for_submitting_something_that_we_ignored.php'); 
-    exit;
-}
-
-// --- SECURITY CHECKS END ---
-
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -54,40 +25,53 @@ if (file_exists('config_secrets.php')) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 1. Collect and Sanitize Form Data
+    // Note: Your HTML uses placeholder="" for name, email, and message inputs 
+    // but relies on their 'type' attribute. It's best practice to use 
+    // the 'name' attribute for form fields (e.g., name="full_name").
+    // I will assume the order corresponds to the fields in your form:
     $full_name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
     $email_address = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
     $user_message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
 
+    print_r([$full_name, $email_address, $user_message]);
     // Basic validation
     if (empty($full_name) || !$email_address || empty($user_message)) {
         // Handle error: redirect or show a message
-        $_SESSION['error_msg'] = 'Please fill in all fields correctly.';
-        header('Location: /index.php');
-        exit;
+        die("Error: Please fill in all fields correctly.");
     }
 
-    // 2. PHPMailer configuration (Rest of the script remains the same)
-    // ... (Your PHPMailer setup) ...
+    // 2. Include PHPMailer files
+    // You may need to adjust these paths based on how you installed PHPMailer
+
+    // 3. Configure and Send Email
     $mail = new PHPMailer(true); // Passing true enables exceptions
 
     try {
         // Server settings (Use your SMTP Credentials here)
         // -------------------------------------------------
         $mail->isSMTP();
+
+        // Use the values
         $mail->Host = $secrets['smtp_host'];
         $mail->Username = $secrets['smtp_user'];
         $mail->Password = $secrets['smtp_pass'];
-        $mail->SMTPAuth = true;                                   
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
-        $mail->Port = 465;                                    
+
+        // Send using SMTP
+        $mail->SMTPAuth = true;                                   // Enable SMTP authentication
+
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Enable implicit TLS encryption ('SMTPS' uses port 465)
+        // OR: $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use 'STARTTLS' for port 587
+        $mail->Port = 465;                                    // TCP port to connect to
 
         // Recipients
-        $mail->setFrom('info@sycamorenest.com', 'Sycamorenest');
-        $mail->addAddress('info@sycamorenest.com', 'Sycamorenest');
-        $mail->addReplyTo($email_address, $full_name); 
+        $mail->setFrom('info@sycamorenest.com', 'Sycamorenest'); // Sender email/name
+        $mail->addAddress('info@sycamorenest.com', 'Sycamorenest'); // Add a recipient (Where the email goes)
+        // $mail->addBCC($email_address); //back to the sender 
+        // $mail->addBCC('meetdaniels@gmail.com'); //send to the admin 
+        $mail->addReplyTo($email_address, $full_name); // Set reply-to to the user's email
 
         // Content
-        $mail->isHTML(true); 
+        $mail->isHTML(true); // Set email format to HTML
         $mail->Subject = 'New Contact Form Submission from ' . $full_name;
 
         $body = "
@@ -99,7 +83,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mail->Body = $body;
-        $mail->AltBody = "Name: {$full_name}\nEmail: {$email_address}\nMessage: {$user_message}";
+        $mail->AltBody = "Name: {$full_name}\nEmail: {$email_address}\nMessage: {$user_message}"; // Plain text alternative
+
 
         $mail->send();
         // Redirect upon successful send
@@ -109,15 +94,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (Exception $e) {
         // Log the error and show a user-friendly message
-        $_SESSION['error_msg'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        header('Location: /index.php');
-        exit;
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        // In a real application, you might log $e->getMessage() instead of echoing it
     }
 
 } else {
     // Not a POST request
-    header('Location: /'); 
+    header('Location: /'); // Redirect back to homepage
     exit;
 }
-// Session_abort is not needed if you use header('Location') and exit;
-// session_abort();
+
+session_abort();

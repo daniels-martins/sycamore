@@ -1,4 +1,9 @@
 <?php session_start(); ?>
+<?php
+session_start();
+// Record the time the form is loaded by the user
+$form_start_time = time();
+?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
@@ -892,6 +897,15 @@
 
                 <h3 class="text-2xl font-bold mb-2">Get In Touch With Us</h3>
                 <form class="space-y-4" id="footer-form" action="send_email.php" method="POST">
+
+                    <input type="hidden" name="form_start_time"
+                        value="<?php echo htmlspecialchars($form_start_time); ?>">
+
+                    <div style="position: absolute; left: -5000px; height: 1px; overflow: hidden;" aria-hidden="true">
+                        <label for="website_url">Do not fill this field</label>
+                        <input type="text" name="website" id="website_url" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <label class="block text-xl mb-1">Your Full Name</label>
                     <input name="name"
                         class="w-full border-b-2 border-white bg-gray-300 text-gray-800 placeholder-white focus:outline-none"
@@ -911,20 +925,16 @@
                     <button type="submit"
                         class="group relative overflow-hidden text-white px-4 py-2 rounded-full flex items-center justify-center border-2 border-white transition-all duration-500 hover:bg-white hover:text-black">
 
-                        <!-- Sliding white overlay -->
                         <span
                             class="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
 
-                        <!-- Button content -->
                         <div
                             class="relative flex items-center gap-2 transition-transform duration-500 ease-out group-hover:translate-x-2">
                             <p class="text-2xl">Send message</p>
                             <span class="relative w-5 h-5">
-                                <!-- White arrow (default) -->
                                 <img src="./assets/images/arrow-right-white.svg" alt="arrow-white"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 group-hover:opacity-0">
 
-                                <!-- Black arrow (on hover) -->
                                 <img src="./assets/icons/arrow-right.svg" alt="arrow-black"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                             </span>
@@ -959,7 +969,7 @@
 
 </html>
 
-<?php 
+<?php
 session_unset();
 session_destroy();
- ?>
+?>
