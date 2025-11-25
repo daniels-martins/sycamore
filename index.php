@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 <?php
-session_start();
 // Record the time the form is loaded by the user
 $form_start_time = time();
 ?>
@@ -30,7 +29,7 @@ $form_start_time = time();
             </div>
 
             <!-- Mobile menu button -->
-            <div class="lg:hidden">
+            <div class="md:hidden">
                 <button class="mobile-menu-button p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -40,18 +39,18 @@ $form_start_time = time();
             </div>
 
             <!-- Desktop menu -->
-            <div class="hidden lg:flex gap-7 scale-80">
+            <div class="hidden md:flex gap-7 scale-80">
                 <a href="#home" class="relative group">
                     <span>Home</span>
                     <span
                         class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1a3066] group-hover:w-full transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                 </a>
-                <a href="#sections-container" class="relative group">
+                <a href="#sections-container" class="relative group hidden lg:inline">
                     <span>Our Vision</span>
                     <span
                         class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1a3066] group-hover:w-full transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                 </a>
-                <a href="#core-values" class="relative group">
+                <a href="#core-values" class="relative group hidden lg:inline">
                     <span>Core Values</span>
                     <span
                         class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1a3066] group-hover:w-full transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
@@ -71,7 +70,7 @@ $form_start_time = time();
                     <span
                         class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1a3066] group-hover:w-full transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
                 </a>
-                <a href="#advisors" class="relative group">
+                <a href="#advisors" class="relative group hidden lg:inline">
                     <span>Board Members</span>
                     <span
                         class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1a3066] group-hover:w-full transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
@@ -93,7 +92,7 @@ $form_start_time = time();
             </div>
 
             <!-- Mobile menu -->
-            <div class="mobile-menu hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4">
+            <div class="mobile-menu hidden lg:hidden absolute top-full left-0 bg-white shadow-lg py-4">
                 <div class="flex flex-col space-y-4 px-4">
                     <a href="#home" class="py-2 border-b border-gray-100">Home</a>
                     <a href="#sections-container" class="py-2 border-b border-gray-100">Our Vision</a>
@@ -130,6 +129,7 @@ $form_start_time = time();
 
                         <img src="./assets/images/tech_related.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0 absolute left-0  w-[100vw] lg:h-[1021px]">
+                             <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
                     </div>
                 </div>
 
@@ -151,6 +151,8 @@ $form_start_time = time();
                             class="lg:h-screen h-[500px] top-30 lg:top-0  absolute left-0 w-[1140px] lg:h-[1021px]"> -->
                         <img src="./assets/images/active_board_room.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0  absolute left-0 w-[100vw] lg:h-[1021px]">
+
+                               <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
                     </div>
                 </div>
 
@@ -160,6 +162,7 @@ $form_start_time = time();
                         <p class="text-[#fff] text-2xl lg:text-4xl lg:mb-4">Your Reliable Partner for</p>
                         <h1 class="text-5xl lg:text-7xl text-[#1a3066] font-bold">Thriving Business <br> Partnership
                         </h1>
+
                         <!-- <div class="relative mt-20 w-32 h-32">
                             <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
                                 class="absolute inset-0 m-auto z-10">
@@ -174,19 +177,22 @@ $form_start_time = time();
 
                         <img src="./assets/images/single_man.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0 absolute right-0 w-[100vw] lg:h-[1021px]">
+
+                          <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
+
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- toggle vision and mission section -->
-        <div id="sections-container" class="relative overflow-hidden h-[350px] lg:h-screen w-full scale-80">
+        <div id="sections-container" class="relative overflow-hidden h-[350px] lg:h-[450px] w-full scale-100">
 
             <!-- Our Vision -->
             <section id="visionSection"
                 class="absolute inset-0 flex flex-col justify-center items-start bg-white text-black px-6 md:px-10 transition-transform duration-700 ease-in-out translate-x-0 z-20">
                 <div class="max-w-3xl mx-auto">
-                    <h3 class="font-bold text-4xl sm:text-5xl mb-6 sm:mb-10">Our Vision</h3>
+                    <h3 class="font-bold text-4xl sm:text-5xl mb-0 sm:mb-5">Our Vision</h3>
                     <p class="text-lg sm:text-2xl lg:text-3xl pr-12">
                         An expert professional services firm, with the focus to provide excellent and sustainable
                         business growth solutions. Our goal is to become the top business and financial advisory company
@@ -233,7 +239,7 @@ $form_start_time = time();
         </div>
 
         <!-- about us -->
-        <div class=" md:flex px-5 lg:px-20 lg:gap-10 lg:py-[150px] scale-80">
+        <div class=" md:flex px-5 lg:px-20 lg:gap-10 lg:py-[15px] scale-80">
             <div class="md:w-[50%] lg:pb-0">
                 <img src="./assets/images/sycamore-image-two.png" alt="synamore dining">
             </div>
@@ -260,7 +266,7 @@ $form_start_time = time();
         </div>
 
         <!-- core values -->
-        <div id="core-values" class="bg-gray-100 lg:px-15 lg:pb-15 lg:scale-80 my-0">
+        <div id="core-values" class="bg-gray-100 lg:px-15 lg:pb-1 lg:scale-90 my-0">
             <div class="flex flex-col items-center text-center pt-20 pb-15 md:w-[50%] mx-auto">
                 <h2 class="text-4xl font-bold mb-6">Our Operating Principles</h2>
                 <p class="text-lg">
@@ -321,7 +327,7 @@ $form_start_time = time();
 
         <!-- services -->
         <div id="services"
-            class="max-w-6xl mx-auto px-1 lg:px-4 lg:py-16 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 lg:mt-0 lg:scale-80">
+            class="max-w-6xl mx-auto px-1 lg:px-4 lg:py-1 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 lg:mt-0 lg:scale-80">
             <!-- Left Column -->
             <div>
                 <h2 class="text-3xl font-bold mb-10">Client Sector Driven Services</h2>
@@ -429,7 +435,7 @@ $form_start_time = time();
         </div>
 
         <!-- philosophy -->
-        <div id="philosophy" class="py-[100px]  bg-gray-100 lg:scale-80">
+        <div id="philosophy" class=" py-10 bg-gray-100 lg:scale-90">
             <h5 class="text-4xl font-bold mb-8 lg:w-[70%] mx-auto text-center">We believe that with the right funding
                 and expertise,
                 Nigerian businesses can grow, expand, and compete successfully on the global stage.
@@ -653,7 +659,7 @@ $form_start_time = time();
                 <!-- Card 2 -->
                 <div class="flex w-full justify-center">
                     <div class="">
-                        <img src="./assets/images/MrOpeolu.jfif" alt="jumoke"
+                        <img src="./assets/images/mr_opeolu.jpeg" alt="jumoke"
                             class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
                         <h3 class="font-semibold text-lg">Opeolu Ogunnaike</h3>
                         <div class="flex justify-center gap-4 items-center w-full">
@@ -676,26 +682,8 @@ $form_start_time = time();
         <div class="bg-gray-200 p-6 rounded-2xl shadow-lg max-w-lg w-full">
             <h3 class="text-xl font-semibold mb-2">Joshua Ayoola Ihimoyan</h3>
             <p class="text-gray-600 mt-10 text-sm leading-relaxed">
+<p>Joshua Ayoola Ihimoyan is a highly experienced and detail-oriented <strong>Chartered Accountant (ICAN)</strong> and <strong>Certified Forensic Accountant (CFAN)</strong> with over 15 years of progressive experience in financial reporting, auditing, budgeting, and internal controls across diverse sectors. He holds a Bachelor&#39;s Degree in Business Management from the University of Jos. Joshua currently works with <strong>Lululemon in Milton, Canada</strong>, providing expert accounting and taxation consultancy services. His extensive career includes key finance and audit roles at reputable organizations such as Integrated Dairies Limited, Dilkon Group, CRUDAN, and Moses Durodola &amp; Co. Joshua&#39;s core expertise spans <strong>external and internal auditing</strong>, <strong>financial reporting</strong>, <strong>tax compliance</strong>, and <strong>risk management</strong>. He is noted for successfully leading teams in designing and implementing <strong>robust financial controls</strong>, ensuring transparency, accountability, and adherence to regulatory frameworks. A results-driven professional, he possesses a strong command of financial analytics tools, including <strong>Microsoft Excel, Power BI, SQL, and Python</strong>, leveraging data-driven insights for informed business decisions. Passionate about ethical financial practices and organizational growth, Joshua is based in <strong>Brampton, Ontario, Canada</strong>, and is open to new professional opportunities where he can contribute measurable value and fiscal integrity.</p>
 
-                Joshua Ayoola Ihimoyan is a highly experienced and detail-oriented **Chartered Accountant (ICAN)** and
-                **Certified Forensic Accountant (CFAN)** with over 15 years of progressive experience in financial
-                reporting, auditing, budgeting, and internal controls across diverse sectors.
-
-                He holds a Bachelor's Degree in Business Management from the University of Jos. Joshua currently works
-                with **Lululemon in Milton, Canada**, providing expert accounting and taxation consultancy services. His
-                extensive career includes key finance and audit roles at reputable organizations such as Integrated
-                Dairies Limited, Dilkon Group, CRUDAN, and Moses Durodola & Co.
-
-                Joshua's core expertise spans **external and internal auditing**, **financial reporting**, **tax
-                compliance**, and **risk management**. He is noted for successfully leading teams in designing and
-                implementing **robust financial controls**, ensuring transparency, accountability, and adherence to
-                regulatory frameworks. A results-driven professional, he possesses a strong command of financial
-                analytics tools, including **Microsoft Excel, Power BI, SQL, and Python**, leveraging data-driven
-                insights for informed business decisions.
-
-                Passionate about ethical financial practices and organizational growth, Joshua is based in **Brampton,
-                Ontario, Canada**, and is open to new professional opportunities where he can contribute measurable
-                value and fiscal integrity.
 
 
             </p>
@@ -710,24 +698,8 @@ $form_start_time = time();
             <h3 class="text-xl font-semibold mb-2">Opeolu Ogunnaike </h3>
             <p class="text-gray-600  mt-10 text-sm leading-relaxed">
 
-                Opeolu Ogunnaike is a highly competent and committed professional with over **20 years of proven
-                experience** in **Internal Audit, Controls, Corporate Governance, Fraud & Forensic Investigation,
-                Financial Analysis, and Tax Management**. He is an experienced **Chartered Accountant** and **Tax
-                Professional**.
+                <p>Opeolu Ogunnaike is a highly competent and committed professional with over <strong>20 years of proven experience</strong> in <strong>Internal Audit, Controls, Corporate Governance, Fraud &amp; Forensic Investigation, Financial Analysis, and Tax Management</strong>. He is an experienced <strong>Chartered Accountant</strong> and <strong>Tax Professional</strong>. Opeolu is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN). He also holds an <strong>MBA in Financial Management</strong>, a Master&#39;s degree in <strong>Auditing &amp; Forensic Investigation</strong>, and an ACCA <strong>CertIFRS</strong> certification. He is currently the <strong>Head of Internal Audit &amp; Controls at Integrated Dairies Limited</strong>, a premiere producer in West Africa. Previously, Opeolu served as the Group Internal Control Manager at <strong>Sportsworld Limited</strong> and the Internal Controller at <strong>SYNLAB Nigeria</strong>. He also consulted with <strong>Krestonouc</strong> (a Kreston International member firm). His extensive expertise covers audit, financial analysis &amp; reporting, tax planning &amp; management, and business performance management. Opeolu is passionate about helping indigenous businesses thrive by leading strategic teams to <strong>hedge against operational wastages</strong>, enhance profitability, and promote <strong>regulatory compliance</strong> with ease.</p>
 
-                Opeolu is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered
-                Institute of Taxation of Nigeria (CITN). He also holds an **MBA in Financial Management**, a Master's
-                degree in **Auditing & Forensic Investigation**, and an ACCA **CertIFRS** certification.
-
-                He is currently the **Head of Internal Audit & Controls at Integrated Dairies Limited**, a premiere
-                producer in West Africa. Previously, Opeolu served as the Group Internal Control Manager at
-                **Sportsworld Limited** and the Internal Controller at **SYNLAB Nigeria**. He also consulted with
-                **Krestonouc** (a Kreston International member firm).
-
-                His extensive expertise covers audit, financial analysis & reporting, tax planning & management, and
-                business performance management. Opeolu is passionate about helping indigenous businesses thrive by
-                leading strategic teams to **hedge against operational wastages**, enhance profitability, and promote
-                **regulatory compliance** with ease.
             </p>
             <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
         </div>
