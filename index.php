@@ -129,7 +129,8 @@ $form_start_time = time();
 
                         <img src="./assets/images/tech_related.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0 absolute left-0  w-[100vw] lg:h-[1021px]">
-                             <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
+                        <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help
+                            Business Grow</p>
                     </div>
                 </div>
 
@@ -152,7 +153,8 @@ $form_start_time = time();
                         <img src="./assets/images/active_board_room.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0  absolute left-0 w-[100vw] lg:h-[1021px]">
 
-                               <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
+                        <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help
+                            Business Grow</p>
                     </div>
                 </div>
 
@@ -178,7 +180,8 @@ $form_start_time = time();
                         <img src="./assets/images/single_man.png" alt=""
                             class="lg:h-screen h-[500px] top-30 lg:top-0 absolute right-0 w-[100vw] lg:h-[1021px]">
 
-                          <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help Business Grow</p>
+                        <p class="text-white text-2xl absolute bottom-0 right-0 pe-36 py-7">Providing Solutions to Help
+                            Business Grow</p>
 
                     </div>
                 </div>
@@ -243,8 +246,10 @@ $form_start_time = time();
             <div class="md:w-[50%] lg:pb-0">
                 <img src="./assets/images/sycamore-image-two.png" alt="synamore dining">
             </div>
-            <div class="md:w-[50%] flex flex-col justify-center">
-                <h3 class="font-bold text-2xl lg:text-3xl mb-5"> About Us <br><br> SycamoreNEST Consulting has a
+            <div class="px-5 md:w-[50%] flex flex-col justify-center">
+                <h3 class=" lg:text-3xl mb-5"> About Us <br><br> </h3>
+                <p class="lg:text-3xl">
+                    SycamoreNEST Consulting has a
                     reputation of providing trusted compliance and advisory services to businesses at various stages of
                     their lifecycle. For us trust means the highest quality of technical skills delivered with
                     integrity, creativity and exceptional service.
@@ -253,10 +258,8 @@ $form_start_time = time();
                     By choosing SycamoreNEST Consulting, you can enjoy the peace of mind assurance that a top notch
                     professional firm can offer, whilst benefitting from experienced professionals who have for many
                     years dealt with all types of business.
-
-
-                </h3>
-                <p class="text-2xl">
+                </p>
+                <p class="lg:text-2xl mt-3">
                     Our consulting focus and core competencies lies in the areas of Accountancy Services, Assurance
                     Services, Corporate and Personal Tax
                     Consultation,
@@ -640,12 +643,12 @@ $form_start_time = time();
 
         <div>
             <!-- Row 1 -->
-            <div class="flex justify-center lg:flex-row md:flex-row flex-col gap-10 mb-10">
+            <div class="flex justify-center items-center lg:flex-row md:flex-row flex-col gap-10 mb-10">
                 <!-- Card 1 -->
                 <div class="flex w-full justify-center">
                     <div class="">
                         <img src="./assets/images/Joshua_Ayoola_Ihimoyan_Photo_page-0001.jpg" alt="Joshua"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
+                            class="rounded-lg w-[340px] h-[260px] object-cover mb-4">
                         <h3 class="font-semibold text-lg">Joshua Ayoola Ihimoyan</h3>
                         <div class="flex justify-center gap-4 items-center w-full">
                             <p class="text-gray-600">Consultant</p>
@@ -660,7 +663,7 @@ $form_start_time = time();
                 <div class="flex w-full justify-center">
                     <div class="">
                         <img src="./assets/images/mr_opeolu.jpeg" alt="jumoke"
-                            class="rounded-lg lg:w-[340px] lg:h-[260px] object-cover mb-4">
+                            class="rounded-lg  w-[340px] h-[260px] object-cover mb-4">
                         <h3 class="font-semibold text-lg">Opeolu Ogunnaike</h3>
                         <div class="flex justify-center gap-4 items-center w-full">
                             <p class="text-gray-600">Consultant</p>
@@ -682,7 +685,22 @@ $form_start_time = time();
         <div class="bg-gray-200 p-6 rounded-2xl shadow-lg max-w-lg w-full">
             <h3 class="text-xl font-semibold mb-2">Joshua Ayoola Ihimoyan</h3>
             <p class="text-gray-600 mt-10 text-sm leading-relaxed">
-<p>Joshua Ayoola Ihimoyan is a highly experienced and detail-oriented <strong>Chartered Accountant (ICAN)</strong> and <strong>Certified Forensic Accountant (CFAN)</strong> with over 15 years of progressive experience in financial reporting, auditing, budgeting, and internal controls across diverse sectors. He holds a Bachelor&#39;s Degree in Business Management from the University of Jos. Joshua currently works with <strong>Lululemon in Milton, Canada</strong>, providing expert accounting and taxation consultancy services. His extensive career includes key finance and audit roles at reputable organizations such as Integrated Dairies Limited, Dilkon Group, CRUDAN, and Moses Durodola &amp; Co. Joshua&#39;s core expertise spans <strong>external and internal auditing</strong>, <strong>financial reporting</strong>, <strong>tax compliance</strong>, and <strong>risk management</strong>. He is noted for successfully leading teams in designing and implementing <strong>robust financial controls</strong>, ensuring transparency, accountability, and adherence to regulatory frameworks. A results-driven professional, he possesses a strong command of financial analytics tools, including <strong>Microsoft Excel, Power BI, SQL, and Python</strong>, leveraging data-driven insights for informed business decisions. Passionate about ethical financial practices and organizational growth, Joshua is based in <strong>Brampton, Ontario, Canada</strong>, and is open to new professional opportunities where he can contribute measurable value and fiscal integrity.</p>
+            <p>Joshua Ayoola Ihimoyan is a highly experienced and detail-oriented <strong>Chartered Accountant
+                    (ICAN)</strong> and <strong>Certified Forensic Accountant (CFAN)</strong> with over 15 years of
+                progressive experience in financial reporting, auditing, budgeting, and internal controls across diverse
+                sectors. He holds a Bachelor&#39;s Degree in Business Management from the University of Jos. Joshua
+                currently works with <strong>Lululemon in Milton, Canada</strong>, providing expert accounting and
+                taxation consultancy services. His extensive career includes key finance and audit roles at reputable
+                organizations such as Integrated Dairies Limited, Dilkon Group, CRUDAN, and Moses Durodola &amp; Co.
+                Joshua&#39;s core expertise spans <strong>external and internal auditing</strong>, <strong>financial
+                    reporting</strong>, <strong>tax compliance</strong>, and <strong>risk management</strong>. He is
+                noted for successfully leading teams in designing and implementing <strong>robust financial
+                    controls</strong>, ensuring transparency, accountability, and adherence to regulatory frameworks. A
+                results-driven professional, he possesses a strong command of financial analytics tools, including
+                <strong>Microsoft Excel, Power BI, SQL, and Python</strong>, leveraging data-driven insights for
+                informed business decisions. Passionate about ethical financial practices and organizational growth,
+                Joshua is based in <strong>Brampton, Ontario, Canada</strong>, and is open to new professional
+                opportunities where he can contribute measurable value and fiscal integrity.</p>
 
 
 
@@ -698,7 +716,22 @@ $form_start_time = time();
             <h3 class="text-xl font-semibold mb-2">Opeolu Ogunnaike </h3>
             <p class="text-gray-600  mt-10 text-sm leading-relaxed">
 
-                <p>Opeolu Ogunnaike is a highly competent and committed professional with over <strong>20 years of proven experience</strong> in <strong>Internal Audit, Controls, Corporate Governance, Fraud &amp; Forensic Investigation, Financial Analysis, and Tax Management</strong>. He is an experienced <strong>Chartered Accountant</strong> and <strong>Tax Professional</strong>. Opeolu is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN). He also holds an <strong>MBA in Financial Management</strong>, a Master&#39;s degree in <strong>Auditing &amp; Forensic Investigation</strong>, and an ACCA <strong>CertIFRS</strong> certification. He is currently the <strong>Head of Internal Audit &amp; Controls at Integrated Dairies Limited</strong>, a premiere producer in West Africa. Previously, Opeolu served as the Group Internal Control Manager at <strong>Sportsworld Limited</strong> and the Internal Controller at <strong>SYNLAB Nigeria</strong>. He also consulted with <strong>Krestonouc</strong> (a Kreston International member firm). His extensive expertise covers audit, financial analysis &amp; reporting, tax planning &amp; management, and business performance management. Opeolu is passionate about helping indigenous businesses thrive by leading strategic teams to <strong>hedge against operational wastages</strong>, enhance profitability, and promote <strong>regulatory compliance</strong> with ease.</p>
+            <p>Opeolu Ogunnaike is a highly competent and committed professional with over <strong>20 years of proven
+                    experience</strong> in <strong>Internal Audit, Controls, Corporate Governance, Fraud &amp; Forensic
+                    Investigation, Financial Analysis, and Tax Management</strong>. He is an experienced
+                <strong>Chartered Accountant</strong> and <strong>Tax Professional</strong>. Opeolu is a Fellow of the
+                Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria
+                (CITN). He also holds an <strong>MBA in Financial Management</strong>, a Master&#39;s degree in
+                <strong>Auditing &amp; Forensic Investigation</strong>, and an ACCA <strong>CertIFRS</strong>
+                certification. He is currently the <strong>Head of Internal Audit &amp; Controls at Integrated Dairies
+                    Limited</strong>, a premiere producer in West Africa. Previously, Opeolu served as the Group
+                Internal Control Manager at <strong>Sportsworld Limited</strong> and the Internal Controller at
+                <strong>SYNLAB Nigeria</strong>. He also consulted with <strong>Krestonouc</strong> (a Kreston
+                International member firm). His extensive expertise covers audit, financial analysis &amp; reporting,
+                tax planning &amp; management, and business performance management. Opeolu is passionate about helping
+                indigenous businesses thrive by leading strategic teams to <strong>hedge against operational
+                    wastages</strong>, enhance profitability, and promote <strong>regulatory compliance</strong> with
+                ease.</p>
 
             </p>
             <button class="close-modal mt-2 text-[#1a3066] font-semibold hover:underline">Close</button>
