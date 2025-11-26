@@ -115,13 +115,13 @@ $form_start_time = time();
                     <div class="absolute top-30 lg:top-50 lg:pl-[50px] z-999">
                         <p class="text-[#fff] text-2xl lg:text-4xl lg:mb-4">Your Reliable Partner for</p>
                         <h1 class="text-5xl lg:text-7xl text-[#fff] font-bold">Sustainable <br> growth</h1>
-                        <!-- <div class="relative mt-20 w-32 h-32">
+                        <div class="relative mt-20 w-32 h-32">
                             <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
                                 class="absolute inset-0 m-auto z-10">
                             <div class="absolute inset-0 animate-[spin_6s_linear_infinite]">
                                 <img src="./assets/images/navi-circle-circle.svg" alt="circle" class="w-full h-full">
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <div>
                         <!-- <img src="./assets/images/plant-bg.webp" alt=""
