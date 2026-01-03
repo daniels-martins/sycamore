@@ -116,11 +116,14 @@ $form_start_time = time();
                         <p class="text-[#fff] text-2xl lg:text-4xl lg:mb-4">Your Reliable Partner for</p>
                         <h1 class="text-5xl lg:text-7xl text-[#fff] font-bold">Sustainable <br> growth</h1>
                         <div class="relative mt-20 w-32 h-32">
-                            <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
+                             <div class="absolute inset-0 w-full">
+                                <img src="./assets/images/circular_arrow.png" alt="circle" class=" scale-200 w-[10em]">
+                            </div>
+                            <!-- <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
                                 class="absolute inset-0 m-auto z-10">
                             <div class="absolute inset-0 animate-[spin_6s_linear_infinite]">
                                 <img src="./assets/images/navi-circle-circle.svg" alt="circle" class="w-full h-full">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div>
@@ -139,13 +142,14 @@ $form_start_time = time();
                     <div class="absolute top-30 lg:top-50 lg:pl-[50px] z-999">
                         <p class="text-[#fff] text-2xl lg:text-4xl lg:mb-4">Your Trusted Partner for</p>
                         <h1 class="text-5xl lg:text-7xl text-[#1a3066] font-bold">Seamless Business <br> Solutions</h1>
-                        <!-- <div class="relative mt-20 w-32 h-32">
-                            <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
-                                class="absolute inset-0 m-auto z-10">
-                            <div class="absolute inset-0 animate-[spin_6s_linear_infinite]">
-                                <img src="./assets/images/navi-circle-circle.svg" alt="circle" class="w-full h-full">
+                        <div class="relative mt-20 w-32 h-32">
+                         <div class="absolute inset-0 w-full">
+                                <img src="./assets/images/circular_arrow.png" alt="circle" class=" scale-200 w-[10em]">
                             </div>
-                        </div> -->
+                            <!-- <div class="absolute inset-0 animate-[spin_6s_linear_infinite]">
+                                <img src="./assets/images/navi-circle-circle.svg" alt="circle" class="w-full h-full">
+                            </div> -->
+                        </div>
                     </div>
                     <div>
                         <!-- <img src="./assets/images/bridge-bg.webp" alt=""
@@ -165,13 +169,11 @@ $form_start_time = time();
                         <h1 class="text-5xl lg:text-7xl text-[#1a3066] font-bold">Thriving Business <br> Partnership
                         </h1>
 
-                        <!-- <div class="relative mt-20 w-32 h-32">
-                            <img src="./assets/images/navi-circle-arrow.svg" alt="arrow"
-                                class="absolute inset-0 m-auto z-10">
-                            <div class="absolute inset-0 animate-[spin_6s_linear_infinite]">
-                                <img src="./assets/images/navi-circle-circle.svg" alt="circle" class="w-full h-full">
+                        <div class="relative mt-20 w-32 h-32">
+                            <div class="absolute inset-0 w-full">
+                                <img src="./assets/images/circular_arrow.png" alt="circle" class=" scale-200 w-[10em]">
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <div>
                         <!-- <img src="./assets/images/single_man.png" alt=""
